@@ -1,0 +1,273 @@
+/* Configuracion general del body */
+body {
+    padding: 0px;
+    margin: 0px;    
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+/* Configuracion del header */
+
+div.header_container {
+    color: white;
+    height: 13vh;
+    max-height: 13vh;
+    width: 100%;
+    background-color: #041176;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+
+    border-bottom: #000000 double 1vh;
+}
+
+div.logo_container {
+    margin: 0px 30px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+div.logo_container img {
+    width: 70px;
+    height: 70px;
+}
+
+button.btn_mostrar {
+    position: fixed;
+    margin: 15px 0px 0px 15px;
+    display: none;
+    height: 20px;
+    background-color: #5e65b8;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+
+img.img_btn_mostrar {
+    height: 100%;
+}
+
+button.btn_mostrar:hover {
+    background-color: #5e65b8;
+}
+
+/* Botones modo oscuro y claro */
+
+div.config_container {
+    margin: 0px 30px;
+}
+
+div.config_container button {
+    background-color: #5e65b8;
+    border: none;
+    border-radius: 15px;
+}
+
+div.config_container button:hover {
+    background-color: #5e65b8;
+}
+
+button.btn_op_hide{
+    display: none;
+}
+
+div.config_container img {
+    width: 35px;
+    height: 35px;
+}
+
+
+/* Main container */
+
+div.main_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+main {
+    padding-top: 14vh;
+}
+
+
+/* Configuracion de la barra de navegacion */
+
+div.navigation_bar_container {
+    width: 14%;
+    max-width: 30ex;
+    min-width: 200px;
+    height: 87vh;
+    background-color: #a9b3da;
+    position: fixed;
+    border-right: #000000 solid 3px;
+}
+
+div.navigation_content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+div.navigation_content a {
+    color: black;
+    margin: 7px;
+    width: fit-content;
+}
+
+div.navigation_options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.navigation_options img {
+    height: 20px;
+}
+
+div.navigation_options button {
+    height: 100%;
+    background-color: #5e65b8;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+
+div.navigation_options button:hover {
+    background-color: #5e65b8;
+}
+
+div.navigation_links {
+    display: flex;
+    flex-direction: column;
+}
+
+div.navigation_bottom {
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+p.navigation_title {
+    font-weight: bold;
+}
+
+
+
+
+/* Main content */
+
+
+div.main_content_container {
+    padding: 0px 0px 70px 15%;
+    width: 100%;
+    max-height: 100%;
+    min-height: 87vh;
+    background-color: #E1E2E7;
+    display: flex;
+    justify-content: center;
+}
+
+div.main_content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img.right {
+    float: right;
+    margin-left: 15px;
+    height: 150px;
+    box-shadow: 7px 5px 5px gray;
+}
+
+img.left {
+    float: left;
+    margin-right: 15px;
+    height: 150px;
+    box-shadow: 7px 5px 5px gray;
+}
+
+img.chonk_right {
+    float: right;
+    margin-left: 15px;
+    height: 300px;
+    box-shadow: 7px 5px 5px gray;
+}
+
+img.chonk_left {
+    float: left;
+    margin-right: 15px;
+    height: 300px;
+    box-shadow: 7px 5px 5px gray;
+}
+
+div.main_title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p.text_ito {
+    text-align: justify;
+}
+
+p.text_theme {
+    font-weight: bold;
+    font-size: 25;
+    text-align: center;
+}
+
+p.text_title {
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    div.navigation_bar_container {
+        display: none;
+    }
+
+    div.text_title_container{
+        display: none;
+    }
+
+    div.main_content_container{
+        padding-left: 0px;
+        font-size: 15px;
+    }
+
+    .main_content img{
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media (min-width: 1025px) {
+    div.navigation_bar_container {
+        display: block;
+    }
+    div.main_content_container{
+        padding-left: 15%;
+        font-size: 20px;
+    }
+
+    div.text_title_container{
+        display: block;
+    }
+
+    button.btn_op_show{
+        display: none;
+    }
+
+    .main_content img{
+        width: 40%;
+        height: 40%;
+    }
+}
